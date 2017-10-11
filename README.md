@@ -44,7 +44,7 @@ android开发框架
 
 ## .组件模块
 
-	[视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](https://github.com/smart005/okandroid/blob/master/docs/parallax_list.md)
+[视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](/docs/parallax_list.md)
 
 ## .项目混淆配置
 
