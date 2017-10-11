@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="46dp">
+
+    <RelativeLayout
+        android:id="@+id/network_state_rl"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/wireless_banner_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/wireless_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/wireless_one_icon" />
+
+        <ImageView
+            android:id="@+id/wrieless_arrow_right_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_right_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/wireless_icon_iv"
+            android:background="@color/transparent"
+            android:singleLine="true"
+            android:text="@string/network_faild_please_check"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

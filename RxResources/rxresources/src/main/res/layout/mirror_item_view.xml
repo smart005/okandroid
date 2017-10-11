@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:paddingBottom="@dimen/spacing_8">
+
+    <RelativeLayout
+        android:id="@+id/container_blank_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_8"
+        android:paddingLeft="@dimen/spacing_10"
+        android:paddingRight="@dimen/spacing_10"
+        android:paddingTop="@dimen/spacing_8">
+
+        <View
+            android:id="@+id/left_blank_v"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/color_eeeeee" />
+
+        <View
+            android:id="@+id/right_blank_one_v"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_10"
+            android:layout_marginLeft="@dimen/spacing_8"
+            android:layout_marginTop="@dimen/spacing_6"
+            android:layout_toRightOf="@id/left_blank_v"
+            android:background="@color/color_eeeeee" />
+
+        <View
+            android:id="@+id/right_blank_two_v"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_10"
+            android:layout_below="@id/right_blank_one_v"
+            android:layout_marginLeft="@dimen/spacing_8"
+            android:layout_marginTop="@dimen/spacing_12"
+            android:layout_toRightOf="@id/left_blank_v"
+            android:background="@color/color_eeeeee" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_10"
+            android:layout_below="@id/right_blank_two_v"
+            android:layout_marginLeft="@dimen/spacing_8"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="@dimen/spacing_12"
+            android:layout_toRightOf="@id/left_blank_v"
+            android:background="@color/color_eeeeee" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_10"
+        android:layout_below="@id/container_blank_rl"
+        android:layout_marginLeft="@dimen/spacing_8"
+        android:layout_marginRight="@dimen/spacing_10"
+        android:layout_marginTop="@dimen/spacing_2"
+        android:background="@color/color_eeeeee" />
+</RelativeLayout>

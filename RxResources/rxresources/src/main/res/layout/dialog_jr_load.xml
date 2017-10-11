@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:background="@drawable/rectangle">
+
+        <RelativeLayout
+            android:id="@+id/rl_progress_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/jrjr_load_load" />
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/dp_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                custom:donut_circle_starting_degree="270"
+                custom:donut_finished_color="#FFFFFF"
+                custom:donut_finished_stroke_width="2dp"
+                custom:donut_show_text="false"
+                custom:donut_unfinished_color="#666666"
+                custom:donut_unfinished_stroke_width="2dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="@dimen/spacing_2"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size_12" />
+    </RelativeLayout>
+
+</LinearLayout>

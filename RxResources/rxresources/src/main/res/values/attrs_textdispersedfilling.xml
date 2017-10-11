@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <declare-styleable name="TextDispersedFilling">
+        <attr name="dispersedFilling" format="dimension"></attr>
+        <attr name="text" format="string"></attr>
+        <attr name="suffixSymbol" format="string"></attr>
+    </declare-styleable>
+</resources>

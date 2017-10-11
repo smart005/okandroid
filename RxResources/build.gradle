@@ -1,0 +1,13 @@
+buildscript {
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.1'
+    }
+}
+allprojects {
+    repositories {
+        maven { url 'http://www.slcore.com:8081/nexus/content/groups/cloud-group/' }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

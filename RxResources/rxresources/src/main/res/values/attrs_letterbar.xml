@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LetterBar">
+        <attr name="lbLetterBarBackground" format="reference|color"/>
+        <attr name="lbLetterBarTextColor" format="reference|color"/>
+        <attr name="lbOverlayBackground" format="reference|color"/>
+        <attr name="lbOverlayTextColor" format="reference|color"/>
+        <attr name="lbOverlayTextSize" format="reference|dimension"/>
+    </declare-styleable>
+</resources>

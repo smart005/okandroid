@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:background="@color/white_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/notification_img_icon_iv"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="4dp">
+
+        <TextView
+            android:id="@+id/notification_subject_text_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/font_size_12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/notification_progress_pbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_centerVertical="true"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_style" />
+
+            <TextView
+                android:id="@+id/notification_progress_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/color_323232"
+                android:textSize="@dimen/font_size_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
