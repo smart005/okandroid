@@ -1,7 +1,7 @@
 视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等
 ------------
 先来看个效果图吧
-
+![image](/docs/parallax.gif)
 
 要使用此控件需经过以下几个步骤：
 ###### 1.添加控件布局
@@ -17,7 +17,7 @@
 	        android:layout_height="match_parent"
 	        android:background="@color/color_f6f6f6" />
 	</RelativeLayout>
-
+###### 2.代码部分,注意必须实现 HostView
 	public class ParallaxTest extends BaseFragmentActivity implements HostView {
 		......
 		@Override
@@ -43,12 +43,14 @@
 	            public Fragment onBuildItem(int position) {
 	                ParallaxContentFragment contentFragment = ParallaxContentFragment.newInstance();
 	                Bundle mb = new Bundle();
+	                //注意这两个参数必须传
 	                mb.putInt("POSITION", position);
 	                mb.putInt("PLACEHODLE_HEIGHT", testPtlv.getTopContentHeight());
 	                contentFragment.setArguments(mb);
 	                return contentFragment;
 	            }
 	        });
+	        //设置tab标题和选择器样式
 	        testPtlv.setOnParallaxTabListViewListener(new OnParallaxTabListViewListener() {
 	            @Override
 	            public IPagerTitleView getTitleView(Context context, final int index, final ViewPager viewPager) {
@@ -74,6 +76,7 @@
 	                return indicator;
 	            }
 	        });
+	        //设置tab以上的自定义视图
 	        View inflate = View.inflate(this, R.layout.parallax_top_content_view, null);
 	        RelativeLayout.LayoutParams vparam = new RelativeLayout.LayoutParams(
 	                RelativeLayout.LayoutParams.MATCH_PARENT,
@@ -81,6 +84,22 @@
 	        );
 	        inflate.setLayoutParams(vparam);
 	        testPtlv.setTopContentView(inflate);
+	        //初始化
 	        testPtlv.initializa(getSupportFragmentManager(), bundle);
 	    }
 	}
+
+###### 3.对于ParallaxContentFragment需继承BaseAdjustFragment
+	public class ParallaxContentFragment extends BaseAdjustFragment {
+		...
+		@Override
+	    protected void onAttachToContext(Context context) {
+	        super.setParentActivity(ParallaxTest.getParallaxTest());
+	        super.onAttachToContext(context);
+	    }
+		...
+	}
+	注意如果是列表必须用RecyclerView控件另外还要对配置器设置这个属性
+	currAdapter.setParallaxPlaceholderHeight(getIntBundle("PLACEHODLE_HEIGHT"));
+
+### [完整代码文件](/demos/parallax/)
