@@ -1,7 +1,8 @@
 视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等
 ------------
 先来看个效果图吧
-![image](https://github.com/smart005/okandroid/blob/master/docs/images/parallax.gif?raw=true)
+
+** ![image](https://github.com/smart005/okandroid/blob/master/docs/images/parallax.gif?raw=true) **
 
 要使用此控件需经过以下几个步骤：
 ###### 1.添加控件布局
