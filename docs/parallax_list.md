@@ -2,7 +2,7 @@
 ------------
 先来看个效果图吧
 
-** ![image](https://github.com/smart005/okandroid/blob/master/docs/images/parallax.gif?raw=true) **
+![image](https://github.com/smart005/okandroid/blob/master/docs/images/parallax.gif?raw=true)
 
 要使用此控件需经过以下几个步骤：
 ###### 1.添加控件布局
