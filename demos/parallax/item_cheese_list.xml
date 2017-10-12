@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="itemModel"
+            type="com.geek.mibao.viewModels.TestModel"></variable>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/nb_tv"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="@{itemModel.name}"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+    </LinearLayout>
+</layout>

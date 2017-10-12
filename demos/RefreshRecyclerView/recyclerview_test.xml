@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.geek.mibao.adapters.RecyclerViewListAdapter" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f6f6f6">
+
+        <com.cloud.resources.xrecyclerview.XRefreshRecyclerView
+            android:id="@+id/list_srlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ffffff"
+            android:scrollbars="vertical"
+            app:adapter="@{adapter}"
+            app:frv_divider="@color/transparent"
+            app:frv_dividerHeight="@dimen/spacing_0"
+            app:frv_emptyView="@id/empty_tv"
+            app:frv_isEmptyViewKeepShowHeadOrFooter="false"
+            app:frv_layoutManager="linear"
+            app:frv_layoutManagerOrientation="vertical" />
+
+        <TextView
+            android:id="@+id/empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="点击刷新数据"
+            android:textColor="@color/color_1f1f1f" />
+    </RelativeLayout>
+</layout>
