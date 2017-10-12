@@ -16,3 +16,18 @@ XRefreshRecyclerView[带刷新和加载]
 
 ###### 2.代码
 数据绑定除了adapter适配器要继承BaseParallaxRecyclerAdapter<T,BT>之外，其它用法与XRefreshListView一样
+
+    binding.activityCenterListSrlv.setXListViewListener(new OnXListViewListener() {
+        @Override
+        public void onRefresh() {
+            
+        }
+
+        @Override
+        public void onLoadMore() {
+            
+        }
+    });
+    binding.activityCenterListSrlv.setPullRefreshEnable(false);
+    binding.activityCenterListSrlv.setPullLoadEnable(true);
+    binding.activityCenterListSrlv.refresh();
