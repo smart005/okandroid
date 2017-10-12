@@ -38,6 +38,7 @@ public class ParallaxTabListView extends RelativeLayout implements HostView {
     MagicIndicator parallaxTabListMic;
     RelativeLayout parallaxTabListTopRl;
     RelativeLayout parallaxTabListRl;
+    RelativeLayout parallaxTabBelowContentRl;
 
     private String TOP_CONTENT_VIEW_TRANSLATION_Y = "d1895cb6e92842c28647b64cf8c7b571";
     private String TOP_CONTAINER_VIEW_TRANSLATION_Y = "873580fb5dcd49c1a739b6a99e279e5c";
@@ -51,6 +52,7 @@ public class ParallaxTabListView extends RelativeLayout implements HostView {
     private int topContentHeight = 0;//头部内容高度
     private OnParallaxTabListViewListener onParallaxTabListViewListener = null;
     private View topContentView = null;
+    private View tabBelowContentView = null;
 
     public ParallaxTabListView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -69,6 +71,7 @@ public class ParallaxTabListView extends RelativeLayout implements HostView {
             parallaxTabListMic = (MagicIndicator) view.findViewById(R.id.parallax_tab_list_mic);
             parallaxTabListTopRl = (RelativeLayout) view.findViewById(R.id.parallax_tab_list_top_rl);
             parallaxTabListRl = (RelativeLayout) view.findViewById(R.id.parallax_tab_list_rl);
+            parallaxTabBelowContentRl = (RelativeLayout) view.findViewById(R.id.parallax_tab_below_content_rl);
             this.addView(view, vgparam);
         } catch (Exception e) {
             Logger.L.error(e);
@@ -85,6 +88,10 @@ public class ParallaxTabListView extends RelativeLayout implements HostView {
 
     public void setTopContentView(View contentView) {
         this.topContentView = contentView;
+    }
+
+    public void setTabBelowContentView(View contentView) {
+        this.tabBelowContentView = contentView;
     }
 
     public void setDefTabPosition(int defTabPosition) {
@@ -104,6 +111,9 @@ public class ParallaxTabListView extends RelativeLayout implements HostView {
             }
             if (topContentView != null) {
                 parallaxTabListTopContentRl.addView(topContentView);
+            }
+            if (tabBelowContentView != null) {
+                parallaxTabBelowContentRl.addView(tabBelowContentView);
             }
             if (tagsItems.size() > 3) {
                 numFragment = 3;

@@ -26,5 +26,11 @@
             android:layout_height="@dimen/spacing_46"
             android:layout_below="@id/parallax_tab_list_top_content_rl"
             android:background="@drawable/white_bg" />
+
+        <RelativeLayout
+            android:id="@+id/parallax_tab_below_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/parallax_tab_list_mic" />
     </RelativeLayout>
 </RelativeLayout>

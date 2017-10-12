@@ -28,6 +28,7 @@ public class BaseAdjustScrollFragment extends Fragment implements TabHolderScrol
     private int mScrollY = 0;
     protected LinearLayoutManager linearLayoutManager;
     private Activity activity = null;
+    private Fragment parentFragment = null;
 
     @TargetApi(23)
     @Override
@@ -56,9 +57,15 @@ public class BaseAdjustScrollFragment extends Fragment implements TabHolderScrol
         this.activity = activity;
     }
 
+    public void setParentFragment(Fragment fragment) {
+        this.parentFragment = fragment;
+    }
+
     protected void onAttachToContext(Context context) {
         if (activity != null) {
             mHostView = (HostView) activity;
+        } else if (parentFragment != null) {
+            mHostView = (HostView) parentFragment;
         }
     }
 
