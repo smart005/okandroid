@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white_color">
+
+        <TextView
+            android:id="@+id/subject_tv"
+            style="@style/text_def_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_4a4a4a"
+            android:textSize="@dimen/font_size_18" />
+
+        <ImageButton
+            android:id="@+id/return_ib"
+            android:layout_width="@dimen/spacing_44"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_8"
+            android:background="@null"
+            android:padding="@dimen/spacing_12"
+            android:src="@mipmap/return_two_left_icon"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/split_line"></View>
+</LinearLayout>

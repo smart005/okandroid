@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="split_line">#e3e3e3</color>
+    <color name="color_eeeff0">#eeeff0</color>
+    <color name="crop_selector_pressed">#1a000000</color>
+    <color name="crop_selector_focused">#77000000</color>
+    <color name="crop_button_bar">#f3f3f3</color>
+    <color name="crop_button_text">#666666</color>
+</resources>

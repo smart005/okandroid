@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeadViewAttrs">
+        <attr name="returnText" format="string"></attr>
+        <attr name="returnIcon" format="integer" />
+        <attr name="returnDrawablePadding" format="integer"></attr>
+        <attr name="subjectColor" format="integer" />
+        <attr name="subjectSize" format="dimension" />
+        <attr name="subjectText" format="string"></attr>
+        <attr name="completeColor" format="integer" />
+        <attr name="completeSize" format="dimension" />
+        <attr name="completeText" format="string"></attr>
+    </declare-styleable>
+</resources>
