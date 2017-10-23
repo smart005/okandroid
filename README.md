@@ -13,6 +13,8 @@ android开发框架
 ## .[项目混淆配置](/docs/confounding.md)
 
 ## RxCRB框架组件
+* [控件使用问题及注意事项]
+	* [RoundedImageView 实现圆形、圆角矩形的注意事项](/docs/attention.md)
 * [组件]
 	* [视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](/docs/parallax_list.md)
 	* [XRefreshRecyclerView[带刷新和加载]](/docs/xrecyclerview.md)
