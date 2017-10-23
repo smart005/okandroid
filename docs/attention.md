@@ -18,7 +18,9 @@ RoundedImageView 实现圆形、圆角矩形的注意事项
 2、src原图与RoundedImageView的比例关系，使用时要注意设置android:scaleType=""，一般来说，有fitCenter,centerCrop，CenterInside,fitXY等几种（[具体区别可以看这里](http://www.cnblogs.com/chq3272991/p/5710498.html)）
 
 如要获得一个圆形，如果src的长宽比为4:3，如果设置fitCenter，把原图按比例扩大或缩小到ImageView的高度，居中显示，那么效果如下：
+
 ![images](/docs/images/round_image_2.jpg)
+
 显然是得不到一个圆形的，那么试试改成fitXY、center、centerCrop:
 ![images](/docs/images/round_image_3.jpg) ![images](/docs/images/round_image_4.jpg) ![images](/docs/images/round_image_5.jpg)
 
