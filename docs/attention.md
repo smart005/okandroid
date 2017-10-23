@@ -28,7 +28,7 @@ RoundedImageView 实现圆形、圆角矩形的注意事项
 这过程也就是说，要先通过scaleType来调整（裁剪）原图，然后再进行切圆角、加边框处理，这里用centerCrop才符合要求
 
 也就是说正圆必须指定以下三个属性
-	<com.makeramen.roundedimageview.RoundedImageView
+
 	android:scaleType="centerCrop"
 	app:riv_corner_radius="@dimen/spacing_27"
-    app:riv_tile_mode_y="clamp"/>
+    app:riv_tile_mode_y="clamp"
