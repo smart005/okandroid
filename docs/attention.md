@@ -22,6 +22,7 @@ RoundedImageView 实现圆形、圆角矩形的注意事项
 ![images](/docs/images/round_image_2.jpg)
 
 显然是得不到一个圆形的，那么试试改成fitXY、center、centerCrop:
+
 ![images](/docs/images/round_image_3.jpg) ![images](/docs/images/round_image_4.jpg) ![images](/docs/images/round_image_5.jpg)
 
 这过程也就是说，要先通过scaleType来调整（裁剪）原图，然后再进行切圆角、加边框处理，这里用centerCrop才符合要求
