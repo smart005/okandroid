@@ -1,7 +1,9 @@
 图片(上传)选择编辑控件
 ---------
 * 示例
+
 ![images](/docs/images/picture_select_editor.png)
+
 * 用法
 
 ###### 0.上传前准备
