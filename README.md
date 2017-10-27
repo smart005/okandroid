@@ -22,4 +22,5 @@ android开发框架
 	* [View任何视图下拉刷新与上拉加载控件](/docs/view_refresh_load.md)
 	* [TabLayoutindicator选择指示器](/docs/tab_layout_indicator.md)
 	* [竖直方向自定义流程视图,类似物流进度](/docs/vertical_flow_track.md)
-	* [图片(上传)选择编辑控件](/docs/picture_select_editor.md)
+	* [图片(预览)选择编辑控件](/docs/picture_select_editor.md)
+	* [图片(文件)上传](/docs/file_upload.md)
