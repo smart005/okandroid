@@ -43,6 +43,8 @@ TabLayoutindicator选择指示器
     android:background="@color/color_ffffff"
     //tab指示器颜色
     app:tabIndicatorColor="@color/color_ff0000"
+    //内容布局类型
+    app:tabIndicatorContentType="frameLayout"
     //tab指示器高度
     app:tabIndicatorHeight="@dimen/spacing_2"
     //指示器类型:Tab类型
@@ -65,7 +67,7 @@ TabLayoutindicator选择指示器
     app:tabSplitLineHeight="@dimen/spacing_20" />
 
     testTli.setFragmentManager(getSupportFragmentManager());
-    testTli.setViewPager(testVp);
+    testTli.setViewPager(testVp);//testTli.setContentFrameLayoutId(R.id.order_content_fl);
     testTli.getTabItems().add(new TabItem("1", "Android"));
     testTli.getTabItems().add(new TabItem("2", "IOS"));
     testTli.getTabItems().add(new TabItem("3", "前端"));
@@ -79,3 +81,18 @@ TabLayoutindicator选择指示器
             //return TestFragment.newInstance();
         }
     };
+
+    ==============================================
+    <FrameLayout
+    android:id="@+id/order_content_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/info_bar_split_v"
+    android:background="@color/color_ffffff" />
+    或
+    <android.support.v4.view.ViewPager
+    android:id="@+id/order_content_vp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/info_bar_split_v"
+    android:background="@color/color_ffffff" />
