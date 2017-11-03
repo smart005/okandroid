@@ -11,4 +11,10 @@
 ```java
 //存在可用网络但未连接
 boolean NetworkUtils.hasAvailable(Context context);
+//检查网络是否成功连接
+boolean NetworkUtils.isConnected(Context context);
+//飞行模式下返回值为-1， 否则返回值为ConnectivityManager.TYPE_MOBILE或ConnectivityManager.TYPE_WIFI
+int NetworkUtils.getConnectedType(Context context);
+//获取网络连接类型:-1未连接;1:wifi;2,3:移动网络;
+List<Integer> NetworkUtils.getAPNType(Context context);
 ```
