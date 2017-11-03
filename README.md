@@ -14,9 +14,11 @@ compile 'com.cloud:basicfun-release:1.0.23@aar'
 *注:代码文档中如果有继承相关基类的必须继承!!!*
 * [AndroidManifest.xml配置](/docs/android_manifest_config.md)
 * [Application配置](/docs/application_config.md)
+* [其他配置](/docs/app_other_config.md)
 ###### 3.[混淆配置](/docs/confounding.md)
 
 ### RxCRB框架组件
+* [广播使用](/docs/receive_use.md)
 * [数据库使用](/docs/db_use.md)
 * [文件操作](/docs/file_operation.md)
 * [网络]
