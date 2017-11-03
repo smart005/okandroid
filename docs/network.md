@@ -14,3 +14,9 @@ public static void main(String[]args){} //Java
 ```
 public static void main(String[]args){}
 ```
+
+```java  
+  
+public static void main(String[]args){} //java代码  
+  
+```
