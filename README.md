@@ -26,8 +26,8 @@ compile 'com.cloud:basicfun-release:1.0.23@aar'
 	* [请求配置——OkRx]
 		* [初始化配置](/docs/okrx_init.md)
 		* [使用方式](/docs/okrx_use.md)
-* [控件使用问题及注意事项]
-	* [RoundedImageView 实现圆形、圆角矩形的注意事项](/docs/attention.md)
+* [提示类、加载类、视图类、消息类对话框]
+	* [ToastUtils工具类](/docs/toast_doc.md)
 * [组件]
 	* [视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](/docs/parallax_list.md)
 	* [XRefreshRecyclerView[带刷新和加载]](/docs/xrecyclerview.md)
@@ -37,3 +37,5 @@ compile 'com.cloud:basicfun-release:1.0.23@aar'
 	* [竖直方向自定义流程视图,类似物流进度](/docs/vertical_flow_track.md)
 	* [图片(预览)选择编辑控件](/docs/picture_select_editor.md)
 	* [图片(文件)上传](/docs/file_upload.md)
+* [控件使用问题及注意事项]
+	* [RoundedImageView 实现圆形、圆角矩形的注意事项](/docs/attention.md)
