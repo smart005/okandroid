@@ -6,3 +6,11 @@
    	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
    	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 ```
+
+public static void main(String[]args){} //Java
+
+	public static void main(String[]args){} //Java
+
+```
+public static void main(String[]args){}
+```
