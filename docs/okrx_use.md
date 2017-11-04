@@ -36,7 +36,7 @@ public class TestService extends OkgoService {
 	//这里写具体的接口对象
 }
 ```
-###### 1.基本请求配置
+###### 2.基本请求配置
 ```java
 @BaseUrlTypeName(value = ApiCodes.API_URL_TYPE_NAME, tokenName = "token", contentType = RequestContentType.Json)
 public interface ITestAPI {
@@ -84,6 +84,15 @@ public class TestService extends OkgoService {
 //好了请求对象基本上就这样，每个请求几乎都一样除了方法名不同返回的数据不同外；
 //下面来重点介绍定义在ITestAPI中的使用；
 ```
+###### 3.可对某接口指定它的请求基地址以及数据提交类型
 ```java
+@GET(value = "/rest/version")
 
+@BaseUrlTypeName(value = "base url",tokenName = "token",contentType = RequestContentType.Form)
+
+@DataParam(value = VersionBean.class)
+RetrofitParams requestOutsideUrl(
+        @Param("versionName") String versionName,
+        @Param("deviceNumber") String deviceNumber
+);
 ```
