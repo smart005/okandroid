@@ -16,6 +16,26 @@ copy一堆的代码；效率不是很高；
 除了以上几点外在使用时还有其它方便之处，只有在使用了才知道；下面就列出每种情况
 在不同场景下的使用方式；
 ```
+###### 1.在配置我们先来介绍一下如何创建inteface类和请求服务类
+```java
+inteface类我们需要根据业务模块进行分，因为对应该接口类上要加基础url和参数提交类型等配置；至于请求服务类最好也跟inteface类对应关联即可；(下面我们就用用户模块做为各个示例说明吧)
+//inteface类创建
+@BaseUrlTypeName(value = ApiCodes.API_URL_TYPE_NAME, tokenName = "token", contentType = RequestContentType.Json)
+public interface IUserAPI {
+	//这里定义你自己的接口
+}
+BaseUrlTypeName注解中参数的含义：
+value:		baseUrl地址标识;
+tokenName:	在同一项目中可能会存在不同服务请求的情况，当然可能每个服务token名称不相同，
+			那么可以在这里指定；因此就有了些参数；
+contentType:该类下所有定义接口的参数都按照此类来提交(form或json)
+
+//服务类创建,这比接口定义简单多了，只要继承OkgoService即可；
+public class UserService extends OkgoService {
+	//这里写具体的接口对象
+}
+```
+###### 1.基本请求配置
 ```java
 
 ```
