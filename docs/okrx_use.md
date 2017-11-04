@@ -106,3 +106,16 @@ RetrofitParams requestOutsideUrl(
         @Param("deviceNumber") String deviceNumber
 );
 ```
+###### 5.对请求参数类似且数据返回类型相同的接口，可采用地址库形式；
+```java
+@GET(values = {
+        @UrlItem(value = "/rest/order/paid", key = "key1"),
+        @UrlItem(value = "/rest/order/canceled", key = "key2"),
+        @UrlItem(value = "/rest/order/completed", key = "key3")
+})
+@DataParam(value = OrderDetailBean.class)
+RetrofitParams requestOrderList(
+        @Param("urlKey") String urlKey
+);
+//只要输入urlKey的值是对应key1 key2 key3中的一个那么请求将以相应的url地址来请求返回数据；
+```
