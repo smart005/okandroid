@@ -14,7 +14,7 @@ copy一堆的代码；效率不是很高；
 5.api数据返回码(code=200,500...)可指定接口配置；
 
 除了以上几点外在使用时还有其它方便之处，只有在使用了才知道；下面就列出每种情况
-在不同场景下的使用方式；
+在不同场景下的使用方式；(支付GET POST DELETE PATCH PUT)
 ```
 ###### 1.在配置我们先来介绍一下如何创建inteface类和请求服务类
 ```java
@@ -90,6 +90,16 @@ public class TestService extends OkgoService {
 
 @BaseUrlTypeName(value = "base url",tokenName = "token",contentType = RequestContentType.Form)
 
+@DataParam(value = VersionBean.class)
+RetrofitParams requestOutsideUrl(
+        @Param("versionName") String versionName,
+        @Param("deviceNumber") String deviceNumber
+);
+```
+###### 4.可对某接口指定url为完整地址
+```java
+//如果是全路径配置，那么在验证配置当中将不拼接baseUrl;
+@GET(value = "http://www.xxx.com/rest/version", isFullUrl = true)
 @DataParam(value = VersionBean.class)
 RetrofitParams requestOutsideUrl(
         @Param("versionName") String versionName,
