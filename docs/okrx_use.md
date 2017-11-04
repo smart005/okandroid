@@ -18,10 +18,11 @@ copy一堆的代码；效率不是很高；
 ```
 ###### 1.在配置我们先来介绍一下如何创建inteface类和请求服务类
 ```java
-inteface类我们需要根据业务模块进行分，因为对应该接口类上要加基础url和参数提交类型等配置；至于请求服务类最好也跟inteface类对应关联即可；(下面我们就用用户模块做为各个示例说明吧)
+inteface类我们需要根据业务模块进行分，因为对应该接口类上要加基础url和参数提交类型等配置；
+至于请求服务类最好也跟inteface类对应关联即可；(下面我们就举个例子来说明吧)
 //inteface类创建
 @BaseUrlTypeName(value = ApiCodes.API_URL_TYPE_NAME, tokenName = "token", contentType = RequestContentType.Json)
-public interface IUserAPI {
+public interface ITestAPI {
 	//这里定义你自己的接口
 }
 BaseUrlTypeName注解中参数的含义：
@@ -31,11 +32,58 @@ tokenName:	在同一项目中可能会存在不同服务请求的情况，当然
 contentType:该类下所有定义接口的参数都按照此类来提交(form或json)
 
 //服务类创建,这比接口定义简单多了，只要继承OkgoService即可；
-public class UserService extends OkgoService {
+public class TestService extends OkgoService {
 	//这里写具体的接口对象
 }
 ```
 ###### 1.基本请求配置
+```java
+@BaseUrlTypeName(value = ApiCodes.API_URL_TYPE_NAME, tokenName = "token", contentType = RequestContentType.Json)
+public interface ITestAPI {
+	@GET(value = "/rest/version")//url地址配置
+    @DataParam(value = VersionBean.class)//接口数据返回类型
+    RetrofitParams requestOutsideUrl(
+    	//参数定义
+    	@Param("versionName") String versionName,
+        @Param("deviceNumber") String deviceNumber
+    );
+    //其中RetrofitParams为固定返回值每个接口都一样,内部使用；
+}
+```
+```java
+public class TestService extends OkgoService {
+	@ApiCheckAnnotation(
+            IsNetworkValid = true,//是否开启验证，即网络不正常情况下会进行toast提示
+            IsTokenValid = false,//是否进行token验证,或true时token会自动以
+            					//请求头参数的提交至后台
+            IsCache = true,//是否启用缓存
+            CacheTime = 1,//缓存时间
+            CacheTimeUnit = TimeUnit.MINUTES,//缓存时间单位
+            CacheKey = "xxx_version_info"//缓存key
+    )
+    public void passwordLogin(Context context,
+                              final String versionName,
+                              final String deviceNumber) {
+        //RxJava订阅器，每个请求定义都一样比较简单这里就不多讲了；
+        BaseSubscriber baseSubscriber = new BaseSubscriber<VersionBean, TestService>(context, this) {
+            @Override
+            protected void onSuccessful(VersionBean versionBean, String reqKey) {
+                //接口返回
+            }
+        };
+        //请求，如果注解中相关的配置验证失败，则不会请求网络；
+        requestObject(context, ITestAPI.class, this, baseSubscriber, new Func1<ITestAPI, RetrofitParams>() {
+            @Override
+            public RetrofitParams call(ITestAPI testAPI) {
+            	//请求api中的接口
+                return testAPI.requestOutsideUrl(versionName, deviceNumber);
+            }
+        });
+    }
+}
+//好了请求对象基本上就这样，每个请求几乎都一样除了方法名不同返回的数据不同外；
+//下面来重点介绍定义在ITestAPI中的使用；
+```
 ```java
 
 ```
