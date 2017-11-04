@@ -113,9 +113,42 @@ RetrofitParams requestOutsideUrl(
         @UrlItem(value = "/rest/order/canceled", key = "key2"),
         @UrlItem(value = "/rest/order/completed", key = "key3")
 })
-@DataParam(value = OrderDetailBean.class)
+@DataParam(value = OrderListBean.class)
 RetrofitParams requestOrderList(
         @Param("urlKey") String urlKey
 );
 //只要输入urlKey的值是对应key1 key2 key3中的一个那么请求将以相应的url地址来请求返回数据；
+```
+###### 6.Path的使用
+```java
+@GET(value = "/rest/order/{id}")
+@DataParam(value = OrderDetailBean.class)
+RetrofitParams requestOrderDetail(
+        @Path("id") String id
+);
+```
+###### 7.DELETE的使用
+```java
+@DELETE(value = "/rest/order/{id}?status={status}")
+@DataParam(value = OrderDetailBean.class)
+RetrofitParams requestOrderDetail(
+        @Path("id") String id,
+        @DelQuery("status") String status
+);
+```
+###### 8.注解属性isRemoveEmptyValueField的使用
+```java
+@GET(value = "/rest/searchList")
+@DataParam(xxxx.class)
+RetrofitParams requestxxxx(
+        @Param(value = "categoryId", isRemoveEmptyValueField = true) String categoryId,
+        @Param("search") String search,
+        @Param(value = "orderBy", isRemoveEmptyValueField = true) String orderBy,
+        @Param(value = "desc", isRemoveEmptyValueField = true) Boolean desc,
+        @Param("pageNum") int pageNum,
+        @Param("pageSize") int pageSize
+);
+//若isRemoveEmptyValueField=true,则表示该字段值若为空时；接口请求提交参数时将不会
+//包含该字段；
+//若加在GET POST DELETE PATCH PUT上面则对此接口下所有提交的参数都生效；
 ```
