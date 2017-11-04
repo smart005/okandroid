@@ -5,9 +5,9 @@ android开发框架
 ### 工程配置
 ###### 1.在项目的build.gradle中做以下配置添加以下三个主要引用:
 ```gradle
-compile 'com.cloud:rxcore-release:1.0.61@aar'
-compile 'com.cloud:rxresources-release:1.0.42@aar'
-compile 'com.cloud:basicfun-release:1.0.23@aar'
+compile 'com.cloud:rxcore-release:1.0.71@aar'
+compile 'com.cloud:rxresources-release:1.0.69@aar'
+compile 'com.cloud:basicfun-release:1.0.27@aar'
 ```
 *[Gradle完整配置](/docs/gradle_all_config.md)*
 ###### 2.项目初始配置
