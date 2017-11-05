@@ -22,6 +22,7 @@ compile 'com.cloud:basicfun-release:1.0.27@aar'
 * [广播使用](/docs/receive_use.md)
 * [数据库使用](/docs/db_use.md)
 * [文件操作](/docs/file_operation.md)
+* [图片(文件)上传](/docs/file_upload.md)
 * [网络]
 	* [验证工具类](/docs/network.md)
 	* [请求配置——OkRx]
@@ -39,7 +40,6 @@ compile 'com.cloud:basicfun-release:1.0.27@aar'
 	* [TabLayoutindicator选择指示器](/docs/tab_layout_indicator.md)
 	* [竖直方向自定义流程视图,类似物流进度](/docs/vertical_flow_track.md)
 	* [图片(预览)选择编辑控件](/docs/picture_select_editor.md)
-	* [图片(文件)上传](/docs/file_upload.md)
 * [控件使用问题及注意事项]
 	* [RoundedImageView 实现圆形、圆角矩形的注意事项](/docs/attention.md)
 
