@@ -29,7 +29,7 @@ compile 'com.cloud:basicfun-release:1.0.27@aar'
 * [提示类、加载类、视图类、消息类对话框]
 	* [ToastUtils工具类](/docs/toast_doc.md)
 * [组件]
-	* [视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](/docs/parallax_list.md)
+	* [视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](/docs/parallax_list2.md)
 	* [XRefreshRecyclerView[带刷新和加载]](/docs/xrecyclerview.md)
 	* [FlowEditItemsLayout[流式]标签列表](/docs/tag_list.md)
 	* [View任何视图下拉刷新与上拉加载控件](/docs/view_refresh_load.md)
