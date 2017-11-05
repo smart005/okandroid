@@ -43,7 +43,7 @@ compile 'com.cloud:basicfun-release:1.0.27@aar'
 * [控件使用问题及注意事项]
 	* [RoundedImageView 实现圆形、圆角矩形的注意事项](/docs/attention.md)
 	* [具有共同头部的 ViewPager](https://github.com/jeasonlzy/HeaderViewPager)
-
+	* [MagicMirror](https://github.com/KingJA/MagicMirror)
 
 -------
 希望对该框架多多提建议一起来完善。如有任何问题请加QQ：715837375
