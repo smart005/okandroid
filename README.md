@@ -18,6 +18,7 @@ compile 'com.cloud:basicfun-release:1.0.27@aar'
 ###### 3.[混淆配置](/docs/confounding.md)
 
 ### RxCRB框架组件
+* [应用程序进入后台或前台监听](/docs/front_back_listening.md)
 * [广播使用](/docs/receive_use.md)
 * [数据库使用](/docs/db_use.md)
 * [文件操作](/docs/file_operation.md)
