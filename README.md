@@ -6,8 +6,8 @@ android开发框架
 ###### 1.在项目的build.gradle中做以下配置添加以下三个主要引用:
 ```gradle
 compile 'com.cloud:rxcore-release:1.0.71@aar'
-compile 'com.cloud:rxresources-release:1.0.69@aar'
-compile 'com.cloud:basicfun-release:1.0.27@aar'
+compile 'com.cloud:rxresources-release:1.0.73@aar'
+compile 'com.cloud:basicfun-release:1.0.28@aar'
 ```
 *[Gradle完整配置](/docs/gradle_all_config.md)*
 ###### 2.项目初始配置
@@ -40,6 +40,7 @@ compile 'com.cloud:basicfun-release:1.0.27@aar'
 	* [TabLayoutindicator选择指示器](/docs/tab_layout_indicator.md)
 	* [竖直方向自定义流程视图,类似物流进度](/docs/vertical_flow_track.md)
 	* [图片(预览)选择编辑控件](/docs/picture_select_editor.md)
+	* [滑动加载或销毁视图](/docs/silding_load_finish_view.md)
 * [控件使用问题及注意事项]
 	* [RoundedImageView 实现圆形、圆角矩形的注意事项](/docs/attention.md)
 	* [具有共同头部的 ViewPager](https://github.com/jeasonlzy/HeaderViewPager)
