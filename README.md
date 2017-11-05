@@ -29,6 +29,7 @@ compile 'com.cloud:basicfun-release:1.0.27@aar'
 		* [使用方式](/docs/okrx_use.md)
 * [提示类、加载类、视图类、消息类对话框]
 	* [ToastUtils工具类](/docs/toast_doc.md)
+* [应用程序MQ缓存](/docs/app_mq_cache.md)
 * [页面统计——变得简单](/docs/statistics_pager.md)
 * [组件]
 	* [视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](/docs/parallax_list2.md)
