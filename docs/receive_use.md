@@ -23,3 +23,4 @@ protected void receiveRSCResult(Intent intent, String action) {
     ...
 }
 ```
+*注：广播的注册与销毁在框架中已处理，无需再处理；*
