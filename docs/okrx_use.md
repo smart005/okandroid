@@ -122,7 +122,7 @@ RetrofitParams requestOrderList(
 ###### 6.Path的使用
 ```java
 @GET(value = "/rest/order/{id}")
-@DataParam(value = OrderDetailBean.class)
+@DataParam(value = xxxxx.class)
 RetrofitParams requestOrderDetail(
         @Path("id") String id
 );
@@ -130,7 +130,7 @@ RetrofitParams requestOrderDetail(
 ###### 7.DELETE的使用
 ```java
 @DELETE(value = "/rest/order/{id}?status={status}")
-@DataParam(value = OrderDetailBean.class)
+@DataParam(value = xxxxx.class)
 RetrofitParams requestOrderDetail(
         @Path("id") String id,
         @DelQuery("status") String status
@@ -151,4 +151,15 @@ RetrofitParams requestxxxx(
 //若isRemoveEmptyValueField=true,则表示该字段值若为空时；接口请求提交参数时将不会
 //包含该字段；
 //若加在GET POST DELETE PATCH PUT上面则对此接口下所有提交的参数都生效；
+```
+###### 9.接口返回码配置说明(可指定某一个接口过滤)
+```java
+@POST(value = "/rest/order/{id}?status={status}")
+@RetCodes({"201","500"})//返回码过滤设置
+@DataParam(value = xxxxx.class)
+RetrofitParams requestOrderDetail(
+        @Path("id") String id,
+        @DelQuery("status") String status
+);
+//即接口返回若是201或500也做为成功处理;用户自行判断;
 ```
