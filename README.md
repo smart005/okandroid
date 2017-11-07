@@ -32,6 +32,8 @@ compile 'com.cloud:basicfun-release:1.0.28@aar'
 	* [ToastUtils工具类](/docs/toast_doc.md)
 * [应用程序MQ缓存](/docs/app_mq_cache.md)
 * [页面统计——变得简单](/docs/statistics_pager.md)
+* [文本/标签]
+	* [文本道行缩进-TextIndentation](/docs/text_indentation.md)
 * [组件]
 	* [视差列表控件——头部自定义布局,中间有tab分页,tab分页里有滚动列表如ListView ScrollView RecyclerView等](/docs/parallax_list2.md)
 	* [XRefreshRecyclerView[带刷新和加载]](/docs/xrecyclerview.md)
