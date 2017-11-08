@@ -5,8 +5,8 @@ android开发框架
 ### 工程配置
 ###### 1.在项目的build.gradle中做以下配置添加以下三个主要引用:
 ```gradle
-compile 'com.cloud:rxcore-release:1.0.71@aar'
-compile 'com.cloud:rxresources-release:1.0.73@aar'
+compile 'com.cloud:rxcore-release:1.0.72@aar'
+compile 'com.cloud:rxresources-release:1.0.79@aar'
 compile 'com.cloud:basicfun-release:1.0.28@aar'
 ```
 *[Gradle完整配置](/docs/gradle_all_config.md)*
@@ -43,6 +43,9 @@ compile 'com.cloud:basicfun-release:1.0.28@aar'
 	* [竖直方向自定义流程视图,类似物流进度](/docs/vertical_flow_track.md)
 	* [图片(预览)选择编辑控件](/docs/picture_select_editor.md)
 	* [滑动加载或销毁视图](/docs/silding_load_finish_view.md)
+	* [H5Webview控件使用和示例](/docs/h5webview_api_demo.md)
+* [处理方案、协议]
+	* [H5调用APP任意API接口协议](/docs/h5_call_api_protrol.md)
 * [控件使用问题及注意事项]
 	* [RoundedImageView 实现圆形、圆角矩形的注意事项](/docs/attention.md)
 	* [具有共同头部的 ViewPager](https://github.com/jeasonlzy/HeaderViewPager)
