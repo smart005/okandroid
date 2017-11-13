@@ -33,4 +33,13 @@ public View getScrollableView() {
     //此处返回Fragment中任意的滚动视图
 }
 ```
+###### 4.如果需要对滑动过程进行监听，可以使用如下代码,currentY 表示当前滑过的距离，maxY表示当前可以滑动的最大距离，有了这两个参数，就可以对任意布局，做任何动画了。例如如下代码就是实现 视差动画效果的代码
+```java
+discoverHtvl.setOnScrollListener(new HeaderViewPagerLayout.OnScrollListener() {
+    @Override
+    public void onScroll(int currentY, int maxY) {
+        image.setTranslationY(currentY / 2);
+    }
+});
+```
 *[简单吧，几步即可达到你想要的效果!]*
