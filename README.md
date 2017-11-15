@@ -20,7 +20,9 @@ compile 'com.cloud:basicfun-release:1.0.28@aar'
 ### RxCRB框架组件
 * [应用程序进入后台或前台监听](/docs/front_back_listening.md)
 * [广播使用](/docs/receive_use.md)
-* [数据库使用](/docs/db_use.md)
+* [rxcore数据库使用]
+	* [1.0.74版本之前使用方式](/docs/db_use.md)
+	* [从1.0.75版本之后改用greenDao方式](/docs/db_use2.md)
 * [文件操作](/docs/file_operation.md)
 * [图片(文件)上传](/docs/file_upload.md)
 * [网络]
