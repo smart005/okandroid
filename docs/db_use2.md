@@ -28,7 +28,20 @@ android {
 }
 //其中当表名、字段名、字段类型改变时必须对schemaVersion的值加1以此来改变数据库表结构
 ```
-###### 4.创建表结构
+###### 4.在Application初始化
+```java
+//若需要调用FileUploadUtils对象进行文件上传的需要进行如下初始
+DBManager.getInstance().initializeBaseDb(this, 
+                "数据库名",
+                AppendPositionBeanDao.class,
+                BreakPointBeanDao.class
+                ...);
+//若【不】需要调用FileUploadUtils对象进行文件上传的可进行如下初始
+DBManager.getInstance().initializeBaseDb(this, 
+                "数据库名",
+                ...);
+```
+###### 5.创建表结构
 ```java
 @Entity(nameInDb = "表名")
 public class TestBean {
