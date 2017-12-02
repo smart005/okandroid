@@ -8,7 +8,19 @@ Android开发框架
 
 </div>
 
-### 工程配置
+### 版本引用
+<a href="https://github.com/smart005/RxCore">
+
+![images](https://img.shields.io/badge/Rxcore-1.1.0-brightgreen.svg)
+</a>
+<a href="https://github.com/smart005/RxResource">
+
+![images](https://img.shields.io/badge/RxResource-1.1.0-brightgreen.svg)
+</a>
+<a href="https://github.com/smart005/RxBasicFun">
+
+![images](https://img.shields.io/badge/RxBasicFun-1.0.46-brightgreen.svg)
+</a>
 ###### 1.在项目的build.gradle中做以下配置添加以下三个主要引用:
 ```gradle
 compile 'com.cloud:rxcore-release:1.0.75@aar'
