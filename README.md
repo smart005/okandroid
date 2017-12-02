@@ -3,7 +3,9 @@ android开发框架
 
 *该框架主要分为三个基础包 RxCore、RxResource、RxBasicFun*
 <div align=center>
+
 ![images](/rxcrb.png)
+
 </div>
 
 ### 工程配置
