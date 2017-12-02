@@ -26,6 +26,9 @@ compile 'com.cloud:rxresource:1.1.0@aar'
 //项目开发工具包：版本更新、基类、图片压缩、dialogs、阿里云图片上传组件(二次封装调用简单)等
 compile 'com.cloud:basicfun:1.0.46@aar'
 ```
+* 
+<font size="3">(以上三个包已发布至JCenter,引用后同步即可下载)</font>
+*
 <font face="#FF7F50">æ库引用的其它关联引用请看具体版本引用里配置</font>
 ### 联系方式
 * email:smartljh@aliyun.com
