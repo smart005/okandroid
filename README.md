@@ -1,6 +1,9 @@
 android开发框架
 ============
-# 该框架主要分为三个基础包 RxCore、RxResource、RxBasicFun [需在Android Studio使用]
+
+# 该框架主要分为三个基础包 RxCore、RxResource、RxBasicFun
+
+![images](/rxcrb.png)
 
 ### 工程配置
 ###### 1.在项目的build.gradle中做以下配置添加以下三个主要引用:
