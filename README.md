@@ -40,7 +40,7 @@ compile 'com.cloud:basicfun:1.0.46@aar'
 * [其他配置](/docs/app_other_config.md)
 
 ### 涉及相关库的混淆
-```text
+```text+
 #*****************fastjson start*************
 -dontwarn com.alibaba.fastjson.**
 -keep class com.alibaba.fastjson.**{*;}
