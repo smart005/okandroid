@@ -27,8 +27,7 @@ compile 'com.cloud:rxresource:1.1.0@aar'
 compile 'com.cloud:basicfun:1.0.46@aar'
 ```
 <font face="#FF7F50">æ库引用的其它关联引用请看具体版本引用里配置</font>
-
-###联系方式
+### 联系方式
 * email:smartljh@aliyun.com
 * QQ群:122607882
 * 如果遇到问题欢迎在群里提问,尽快回应解决;同时也欢迎大家一起来提建议;
