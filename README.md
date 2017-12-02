@@ -9,14 +9,7 @@ Android开发框架
 </div>
 
 ### 版本引用
-<a href="https://github.com/smart005/RxCore">
-
-![images](https://img.shields.io/badge/Rxcore-1.1.0-brightgreen.svg)
-</a><a href="https://github.com/smart005/RxResource">
-![images](https://img.shields.io/badge/RxResource-1.1.0-brightgreen.svg)
-</a><a href="https://github.com/smart005/RxBasicFun">
-![images](https://img.shields.io/badge/RxBasicFun-1.0.46-brightgreen.svg)
-</a>
+<a href="https://github.com/smart005/RxCore">![images](https://img.shields.io/badge/Rxcore-1.1.0-brightgreen.svg)</a><a href="https://github.com/smart005/RxResource">![images](https://img.shields.io/badge/RxResource-1.1.0-brightgreen.svg)</a><a href="https://github.com/smart005/RxBasicFun">![images](https://img.shields.io/badge/RxBasicFun-1.0.46-brightgreen.svg)</a>
 ###### 1.在project的build.gradle中分别引用下面库:
 ```gradle
 //网络请求、数据缓存、资源 SP 验证等工具包
