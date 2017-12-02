@@ -22,17 +22,23 @@ compile 'com.cloud:basicfun:1.0.46@aar'
 <font style="font-size: 8px;color: gray;">*(以上三个包已发布至JCenter,引用后同步即可下载)*</font>
 
 <font face="#FF7F50">æ库引用的其它关联引用请看具体版本引用里配置</font>
+### 未来版本
+######[v1.2.x]
+* 将框架中所有功能与资源配置分离出来，方便可自定义配置；同时提供一份默认配置；
+* 对okrx网络请求功能增加日志屏蔽功能配置，方便项目发布禁用；
+
 ### 联系方式
 * email:smartljh@aliyun.com
 * QQ群:122607882
 * 如果遇到问题欢迎在群里提问,尽快回应解决;同时也欢迎大家一起来提建议;
 
 ### 文档
-###### 1.项目初始配置
+###### 1.项目配置及部分功能
 *注:代码文档中如果有继承相关基类的必须继承!!!*
 * [AndroidManifest.xml配置](/docs/android_manifest_config.md)
 * [Application配置](/docs/application_config.md)
-* [其他配置](/docs/app_other_config.md)
+* [初始化配置](/docs/app_other_config.md)
+* [应用程序进入后台或前台监听](/docs/front_back_listening.md)
 
 ### 涉及相关库的混淆
 ```text
@@ -48,6 +54,8 @@ compile 'com.cloud:basicfun:1.0.46@aar'
 æ x5webview
 ```
 [完整混淆,请点击这里](/docs/confounding.md)
+
+*[控件使用问题及引用地址](/docs/ctrol_use_refreners.md)*
 
 ### Licenses
 ```text
