@@ -13,11 +13,11 @@ Android开发框架
 ###### 1.在project的build.gradle中分别引用下面库:
 ```gradle
 //网络请求、数据缓存、资源 SP 验证等工具包
-compile 'com.cloud:rxcore:1.1.0@aar'
+compile 'com.cloud:rxcore:1.1.1@aar'
 //与rxcore类似,部分带资源的组件在该库中封装
-compile 'com.cloud:rxresource:1.1.0@aar'
+compile 'com.cloud:rxresource:1.1.1@aar'
 //项目开发工具包：版本更新、基类、图片压缩、dialogs、阿里云图片上传组件(二次封装调用简单)等
-compile 'com.cloud:basicfun:1.0.46@aar'
+compile 'com.cloud:basicfun:1.0.47@aar'
 ```
 <font style="font-size: 8px;color: gray;">*(以上三个包已发布至JCenter,引用后同步即可下载)*</font>
 
