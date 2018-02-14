@@ -39,9 +39,12 @@
     "type": "apiToken"//token取值是来源于哪个微服务
 }
 ```
-###### 3.接收默认广播Action配置
+###### 3.接收广播Action配置
 ```text
+//框架中默认广播action
 "receiveAction": "951762469"
+//网络广播action
+"receiveNetworkAction": "1659023507",
 ```
 ###### 4.资源配置
 ```text

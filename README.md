@@ -9,23 +9,31 @@ Android开发框架
 </div>
 
 ### 版本引用 [更新历史](/docs/update_history.md)
-<a href="https://github.com/smart005/RxCore">![images](https://img.shields.io/badge/Rxcore-1.1.1-brightgreen.svg)</a> <a href="https://github.com/smart005/RxResource">![images](https://img.shields.io/badge/RxResource-1.1.1-brightgreen.svg)</a> <a href="https://github.com/smart005/RxBasicFun">![images](https://img.shields.io/badge/RxBasicFun-1.0.47-brightgreen.svg)</a>
+<a href="https://github.com/smart005/RxCore">![images](https://img.shields.io/badge/Rxcore-1.2.0-brightgreen.svg)</a> <a href="https://github.com/smart005/RxResource">![images](https://img.shields.io/badge/RxResource-1.2.0-brightgreen.svg)</a> <a href="https://github.com/smart005/RxBasicFun">![images](https://img.shields.io/badge/RxBasicFun-1.2.0-brightgreen.svg)</a>
 ###### 1.在project的build.gradle中分别引用下面库:
 ```gradle
-//网络请求、数据缓存、资源 SP 验证等工具包
-compile 'com.cloud:rxcore:1.1.1@aar'
-//与rxcore类似,部分带资源的组件在该库中封装
-compile 'com.cloud:rxresource:1.1.1@aar'
-//项目开发工具包：版本更新、基类、图片压缩、dialogs、阿里云图片上传组件(二次封装调用简单)等
-compile 'com.cloud:basicfun:1.0.47@aar'
+compile 'com.cloud:rxcore:1.2.0@aar'
+compile 'com.cloud:rxresource:1.2.0@aar'
+compile 'com.cloud:basicfun:1.2.0@aar'
 ```
+*[项目源代码可能不是最新的,请使用以上方式导入]*
+
 <font style="font-size: 8px;color: gray;">*(以上三个包已发布至JCenter,引用后同步即可下载)*</font>
 
 <font face="#FF7F50">æ库引用的其它关联引用请看具体版本引用里配置</font>
 ### 未来版本
-###### [v1.2.x]
-* 将框架中所有功能与资源配置分离出来，方便可自定义配置；同时提供一份默认配置；
-* 对okrx网络请求功能增加日志屏蔽功能配置，方便项目发布禁用；
+###### [v1.3.0]
+* 继续将框架中所有功能与资源配置分离出来，方便可自定义配置；同时提供一份默认配置；
+* 提供框架使用的基础demo配置;
+###### [v1.4.0]
+* 提供多平台无埋点统计接入事件配置示例（简单配置即可）；
+* 提供多维度scheme跳转及H5交互配置示例;
+* 优化框架性能;
+###### [v1.5.0]
+* 提供框架中独有的加密体系;
+###### [v1.6.0]
+* 提供框架的各组件使用示例;
+* 组件化封装，提供各功能及效果的封装;
 
 ### 联系方式
 * email:smartljh@aliyun.com
