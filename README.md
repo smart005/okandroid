@@ -9,11 +9,11 @@ Android开发框架
 </div>
 
 ### 版本引用 [更新历史](/docs/update_history.md)
-<a href="https://github.com/smart005/RxCore">![images](https://img.shields.io/badge/Rxcore-1.2.0-brightgreen.svg)</a> <a href="https://github.com/smart005/RxResource">![images](https://img.shields.io/badge/RxResource-1.2.0-brightgreen.svg)</a> <a href="https://github.com/smart005/RxBasicFun">![images](https://img.shields.io/badge/RxBasicFun-1.2.0-brightgreen.svg)</a>
+<a href="https://github.com/smart005/RxCore">![images](https://img.shields.io/badge/Rxcore-1.2.0-brightgreen.svg)</a> <a href="https://github.com/smart005/RxResource">![images](https://img.shields.io/badge/RxResource-1.2.1-brightgreen.svg)</a> <a href="https://github.com/smart005/RxBasicFun">![images](https://img.shields.io/badge/RxBasicFun-1.2.0-brightgreen.svg)</a>
 ###### 1.在project的build.gradle中分别引用下面库:
 ```gradle
 compile 'com.cloud:rxcore:1.2.0@aar'
-compile 'com.cloud:rxresource:1.2.0@aar'
+compile 'com.cloud:rxresource:1.2.1@aar'
 compile 'com.cloud:basicfun:1.2.0@aar'
 ```
 *[项目源代码可能不是最新的,请使用以上方式导入]*
