@@ -69,6 +69,9 @@ compile 'com.cloud:basicfun:1.2.0@aar'
 
 *[控件使用问题及引用地址](/docs/ctrol_use_refreners.md)*
 
+### 辅助组件
+* [高德地图定位及SDK定位功能](/docs/gaode_location_map.md)
+
 ### Licenses
 ```text
 Copyright 2017 chester(李敬欢)
