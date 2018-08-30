@@ -11,6 +11,14 @@ Android开发框架
 ### 版本引用 [更新历史](/docs/update_history.md)
 <a href="https://github.com/smart005/RxCore">![images](https://img.shields.io/badge/Rxcore-1.2.0-brightgreen.svg)</a> <a href="https://github.com/smart005/RxResource">![images](https://img.shields.io/badge/RxResource-1.2.1-brightgreen.svg)</a> <a href="https://github.com/smart005/RxBasicFun">![images](https://img.shields.io/badge/RxBasicFun-1.2.0-brightgreen.svg)</a>
 ###### 1.在project的build.gradle中分别引用下面库:
+*【2018-9-3之前将更新至以下版本;之后版本将在www.geease.com上维护】*
+```gradle
+compile 'com.cloud:rxcore:1.2.5@aar'
+compile 'com.cloud:rxresource:1.2.2@aar'
+compile 'com.cloud:basicfun:1.2.8@aar'
+```
+
+///历史版本
 ```gradle
 compile 'com.cloud:rxcore:1.2.0@aar'
 compile 'com.cloud:rxresource:1.2.1@aar'
